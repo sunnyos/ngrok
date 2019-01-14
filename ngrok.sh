@@ -55,12 +55,12 @@ install_go(){
 	if [ $(getconf WORD_BIT) = '32' ] && [ $(getconf LONG_BIT) = '64' ];then
 		# 判断文件是否已经存在
 		if [ ! -f $SELFPATH/go1.7.6.linux-amd64.tar.gz ];then
-			wget https://www.golangtc.com/static/go/1.7.6/go1.7.6.linux-amd64.tar.gz --no-check-certificate
+			wget https://studygolang.com/dl/golang/go/1.7.6/go1.7.6.linux-amd64.tar.gz --no-check-certificate
 		fi
 	    tar zxvf go1.7.6.linux-amd64.tar.gz
 	else
 		if [ ! -f $SELFPATH/go1.7.6.linux-386.tar.gz ];then
-			wget https://www.golangtc.com/static/go/1.7.6/go1.7.6.linux-386.tar.gz --no-check-certificate
+			wget https://studygolang.com/dl/golang/go/1.7.6/go1.7.6.linux-386.tar.gz --no-check-certificate
 		fi
 	    tar zxvf go1.7.6.linux-386.tar.gz
 	fi
